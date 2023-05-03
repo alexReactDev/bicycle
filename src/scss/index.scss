@@ -1,0 +1,28 @@
+//Nullstyle
+@import "./nullstyle.scss";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: "Lato";
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__main {
+		flex: 1 1 auto;
+	}
+
+	&__footer {
+		flex-shrink: 0;
+	}
+}
