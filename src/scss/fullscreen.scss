@@ -1,3 +1,7 @@
 .fullscreen {
 	background: url("../images/fullscreen/bg.jpg") center / cover no-repeat;
+
+	@media (max-width: 767px) {
+		background: url("../images/fullscreen/bg_mobile.jpg") center / cover no-repeat;
+	}
 }
