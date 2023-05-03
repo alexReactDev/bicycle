@@ -21,6 +21,10 @@ body {
 	@media (max-width: 579px) {
 		line-height: 1.7em;
 	}
+
+	@media (max-width: 379px) {
+		font-size: 0.9375rem;
+	}
 }
 
 .wrapper {
@@ -42,3 +46,6 @@ body {
 @import "./fullscreen.scss";
 @import "./title.scss";
 @import "./generation.scss";
+@import "./vintage.scss";
+@import "./company.scss";
+@import "./text-content.scss";
