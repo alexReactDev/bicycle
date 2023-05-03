@@ -11,6 +11,16 @@ html {
 body {
 	height: 100%;
 	font-family: "Lato";
+	color: #848789;
+	line-height: 2.1em;
+
+	@media (max-width: 579px) {
+		line-height: 1.9em;
+	}
+
+	@media (max-width: 579px) {
+		line-height: 1.7em;
+	}
 }
 
 .wrapper {
@@ -30,3 +40,5 @@ body {
 //BEM blocks
 @import "./fsc.scss";
 @import "./fullscreen.scss";
+@import "./title.scss";
+@import "./generation.scss";
