@@ -3,6 +3,37 @@
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 2fr 1fr;
 
+	&_rev {
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 2fr 1fr;
+
+		.vintage__company {
+			order: 2;
+		}
+
+		.vintage__text-content {
+			order: 1;
+		}
+
+		.vintage__picture {
+			order: 3;
+		}
+
+		@media (max-width: 1199px) {
+			.vintage__company {
+				order: 1;
+			}
+	
+			.vintage__text-content {
+				order: 2;
+			}
+	
+			.vintage__picture {
+				order: 3;
+			}
+		}
+	}
+
 	@media (max-width: 1199px) {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr)
