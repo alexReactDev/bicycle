@@ -1,0 +1,6 @@
+images
+/build
+
+*.config
+*_dev
+*_gitignore
