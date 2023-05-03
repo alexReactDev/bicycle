@@ -26,3 +26,7 @@ body {
 		flex-shrink: 0;
 	}
 }
+
+//BEM blocks
+@import "./fsc.scss";
+@import "./fullscreen.scss";
