@@ -1,0 +1,41 @@
+.contact {
+	&__content {
+		max-width: 534px;
+		margin: auto;
+	}
+
+	&__body {
+		padding: 110px 15px;
+
+		@media (max-width: 579px) {
+			padding: 70px 15px;
+		}
+
+		@media (max-width: 579px) {
+			padding: 50px 15px;
+		}
+
+		@media (max-width: 379px) {
+			padding: 30px 15px;
+		}
+	}
+
+	&__logo {
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		font-size: 1.5rem;
+		font-style: italic;
+		text-align: center;
+
+		@media (max-width: 379px) {
+			font-size: 1.3rem;
+		}
+	}
+
+	&__form {
+	}
+}
+
