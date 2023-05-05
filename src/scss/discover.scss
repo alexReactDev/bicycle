@@ -1,0 +1,35 @@
+.discover {
+	background-color: #282f35;
+
+	&__content {
+		max-width: 534px;
+		margin: auto;
+	}
+
+	&__body {
+		display: flex;
+		padding: 72px 0px;
+		justify-content: center;
+		align-items: center;
+
+		@media (max-width: 579px) {
+			padding: 50px 0px;
+		}
+
+		@media (max-width: 379px) {
+			padding: 35px 0px;
+		}
+	}
+
+	&__btn {
+		padding: 7.5px 56px;
+
+		@media (max-width: 579px) {
+			padding: 7.5px 30px;
+		}
+
+		@media (max-width: 379px) {
+			padding: 7.5px 20px;
+		}
+	}
+}

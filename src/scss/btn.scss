@@ -1,0 +1,29 @@
+.btn {
+	text-decoration: none;
+	border: solid #94979a 1px;
+	color: white;
+	font-size: 0.875rem;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+
+	@media (max-width: 579px) {
+		letter-spacing: 0.1em;
+		font-size: 0.8125rem;
+	}
+
+	@media (max-width: 579px) {
+		font-size: 0.75em;
+	}
+
+	&:hover {
+		color: #d4d4d4;
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+		left: 1px;
+		text-decoration: underline;
+	}
+}
