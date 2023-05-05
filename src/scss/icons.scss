@@ -1,0 +1,19 @@
+.icons {
+	display: flex;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+		list-style: none;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__icon {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
