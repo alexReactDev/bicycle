@@ -10,6 +10,7 @@ html {
 
 body {
 	height: 100%;
+	padding-bottom: 160px;
 	font-family: "Lato";
 	color: #848789;
 	line-height: 2.1em;
@@ -25,6 +26,10 @@ body {
 	@media (max-width: 379px) {
 		font-size: 0.9375rem;
 	}
+}
+
+.lock {
+	overflow: hidden;
 }
 
 .wrapper {
@@ -58,3 +63,6 @@ body {
 @import "./logo.scss";
 @import "./footer.scss";
 @import "./icons.scss";
+@import "./nav.scss";
+@import "./burger.scss";
+@import "./header.scss";
