@@ -1,3 +1,5 @@
+let siema;
+
 window.addEventListener("load", () => {
 	document.querySelector("#email-form__email").addEventListener("focus", hideLabelOnFocus);
 
@@ -12,6 +14,29 @@ window.addEventListener("load", () => {
 	})
 
 	document.querySelector(".burger").onclick = openMenu;
+
+	siema = new Siema({
+		duration: 500,
+		onChange() {
+			document.querySelector(".slider__button_active").classList.remove("slider__button_active");
+			document.querySelector(`.slider__button[data-index="${siema.currentSlide + 1}"]`).classList.add("slider__button_active");
+			sliderAutoHeight();
+		}
+	});
+
+	const sliderButtons = document.querySelectorAll(".slider__button");
+
+	for (let button of sliderButtons) {
+		button.onclick = (e) => {
+			document.querySelector(".slider__button_active").classList.remove("slider__button_active");
+			e.target.classList.add("slider__button_active");
+
+			siema.goTo(e.target.getAttribute("data-index") - 1);
+			sliderAutoHeight();
+		}
+	}
+
+	sliderAutoHeight();
 })
 
 function hideLabelOnFocus({target}) {
@@ -44,4 +69,9 @@ function openMenu() {
 
 		burger.onclick = openMenu;
 	};
+}
+
+function sliderAutoHeight() {
+	const currentSlide = document.querySelector(`.slider__item[data-index="${siema.currentSlide + 1}"]`);
+	document.querySelector(".siema").style.height = `${currentSlide.offsetHeight}px`;
 }

@@ -1,6 +1,25 @@
 .title {
 	text-align: center;
 
+	&_time {
+		.title__icon {
+			margin-bottom: 18px;
+
+			@media (max-width: 449px) {
+				margin-bottom: 10px;
+			}
+	
+			@media (max-width: 379px) {
+				margin-bottom: 8px;
+			}
+		}
+
+		.title__text {
+			text-transform: none;
+			letter-spacing: 0.1em;
+		}
+	}
+
 	&__icon {
 		margin-bottom: 15px;
 
@@ -36,5 +55,11 @@
 			font-size: 0.9375rem;
 			letter-spacing: 0.05em;
 		}
+	}
+
+	&__time {
+		padding-left: 5px;
+		font-weight: 300;
+		color: #848789;
 	}
 }
