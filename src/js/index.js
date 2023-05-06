@@ -3,15 +3,8 @@ let siema;
 window.addEventListener("load", () => {
 	document.querySelector("#email-form__email").addEventListener("focus", hideLabelOnFocus);
 
-	const header = document.querySelector(".header");
-	window.addEventListener("scroll", () => {
-		if(window.scrollY > 0) {
-			header.classList.add("header_scroll");
-		}
-		else {
-			header.classList.remove("header_scroll")
-		}
-	})
+	window.addEventListener("scroll", windowScrollHandler);
+	windowScrollHandler();
 
 	document.querySelector(".burger").onclick = openMenu;
 
@@ -74,4 +67,14 @@ function openMenu() {
 function sliderAutoHeight() {
 	const currentSlide = document.querySelector(`.slider__item[data-index="${siema.currentSlide + 1}"]`);
 	document.querySelector(".siema").style.height = `${currentSlide.offsetHeight}px`;
+}
+
+function windowScrollHandler() {
+	const header = document.querySelector(".header");
+	if(window.scrollY > 0) {
+		header.classList.add("header_scroll");
+	}
+	else {
+		header.classList.remove("header_scroll")
+	}
 }
