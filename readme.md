@@ -11,6 +11,7 @@ __Used technologies:__
 - Adaptive-responsive layout
 - Grid layout
 - Javascript
+- Siema slider
 
 __About project:__ AOD is modern adaptive landing with large number of pictures and flexible design that adapts to any resolution. SCSS preprocessor and Grid layout were used for more advanced style. Also Javascript was employed for better functionality.
 
@@ -26,6 +27,7 @@ __Использованные технологии:__
 - Адаптивно-отзывчивая верстка
 - Grid разметка
 - Javascript
+- Siema slider
 
 <br>
 
@@ -35,3 +37,5 @@ __О проекте:__ AOD - это современный лендинг с б�
 
 ## Preview/Превью
 ![homepage](./preview/homepage.png)
+
+![demo](./preview/demo.gif)
