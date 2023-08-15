@@ -4,3 +4,4 @@ images
 *.config
 *_dev
 *_gitignore
+node_modules
